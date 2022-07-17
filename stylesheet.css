@@ -1,0 +1,51 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
+img {
+	max-width:100%;
+}
+
+.jumbotron {
+	background-color: transparent;
+}
+
+.card {
+	background-color: transparent;
+}
+
+.errorAlert {
+	padding-top: 2rem;
+}
+
+.mainbody {
+	padding-top: 6rem;
+	padding-bottom: 2rem;
+}
+
+.pagecontent {
+	display: none;
+}
+
+.displaymaths {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+	.darkContent {
+		display: inherit;
+	}
+	.lightContent {
+		display: none;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	.darkContent {
+		display: none;
+	}
+	.lightContent {
+		display: inherit;
+	}
+}
