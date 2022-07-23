@@ -6,14 +6,20 @@
 <link rel="stylesheet" href="/bootstrap.css">
 <script src="/jquery.js"></script>
 <script src="/bootstrap.js"></script>
+<script src="/script.js"></script>
 <link type="text/css" rel="stylesheet" href="/stylesheet.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="mainbody container">
+<div class="container">
 <h2>OkayBotster commands</h2>
+</div>
+<div class="container">
+<input class="form-control" type="text" id="inputBox" onkeyup="filterTable()" placeholder="Search for a command...">
+</div>
 <div class="container table-responsive">
-<table class="table table-bordered">
+<table class="table table-bordered" id="commandTable">
 <thead>
 <tr>
 <th scope="col">Command</th>
