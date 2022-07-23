@@ -6,14 +6,20 @@
 <link rel="stylesheet" href="/bootstrap.css">
 <script src="/jquery.js"></script>
 <script src="/bootstrap.js"></script>
+<script src="/script.js"></script>
 <link type="text/css" rel="stylesheet" href="/stylesheet.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="mainbody container">
-<h2>botofcookies commands</h2>
 <div class="container">
-<table class="table table-bordered">
+<h2>botofcookies commands</h2>
+</div>
+<div class="container">
+<input class="form-control" type="text" id="inputBox" onkeyup="filterTable()" placeholder="Search for a command...">
+</div>
+<div class="container table-responsive">
+<table class="table table-bordered" id="commandTable">
 <thead>
 <tr>
 <th scope="col">Command</th>
@@ -22,11 +28,11 @@
 </thead>
 <tbody>
 <tr><td><code>!8ball</code></td><td>Get a random answer to your question</td></tr>
-<tr><td><code>!account</code></td><td></td></tr>
+<tr><td><code>!account</code></td><td>Used when linking your Twitch and Discord accounts in the bot</td></tr>
 <tr><td><code>!accountage</code></td><td>Calculates the age of your Twitch account</td></tr>
 <tr><td><code>!addsong</code></td><td>Alias for <code>!songrequest</code></td></tr>
-<tr><td><code>!adventure</code></td><td></td></tr>
-<tr><td><code>!adventure top5</code></td><td></td></tr>
+<tr><td><code>!adventure</code></td><td>Go on an adventure with other users to win points</td></tr>
+<tr><td><code>!adventure top5</code></td><td>Display the top 5 adventurers</td></tr>
 <tr><td><code>!age</code></td><td>How old CookieIDHRL is</td></tr>
 <tr><td><code>!auction lastWinner</code></td><td></td></tr>
 <tr><td><code>!ballswin</code></td><td>Gives points to a Marbles winner</td></tr>
@@ -64,7 +70,6 @@
 <tr><td><code>!mathsjoke</code></td><td>Get a funny Maths joke</td></tr>
 <tr><td><code>!multi</code></td><td></td></tr>
 <tr><td><code>!nextsong</code></td><td>Display the next song in the queue (not including playlist)</td></tr>
-<tr><td><code>!pepsitower</code></td><td></td></tr>
 <tr><td><code>!pingu</code></td><td>NOOT NOOT</td></tr>
 <tr><td><code>!points</code></td><td>Display how many points you have</td></tr>
 <tr><td><code>!previoussong</code></td><td>Display the last played song</td></tr>
@@ -93,6 +98,7 @@
 <tr><td><code>!sudo</code></td><td></td></tr>
 <tr><td><code>!targettest</code></td><td><code>(target)</code></td></tr>
 <tr><td><code>!test</code></td><td></td></tr>
+<tr><td><code>!testing</code></td><td><code>&lt;3</code></td></tr>
 <tr><td><code>!ticket</code></td><td>Alias for <code>!tickets</code></td></tr>
 <tr><td><code>!tickets</code></td><td><code>!ticket &lt;amount&gt;</code> buy tickets to enter the raffle</td></tr>
 <tr><td><code>!time</code></td><td>Displays how long you have been in chat</td></tr>
