@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>botofcookies modcoms</title>
+<link rel="stylesheet" href="/bootstrap.css">
+<script src="/jquery.js"></script>
+<script src="/bootstrap.js"></script>
+<script src="/script.js"></script>
+<link type="text/css" rel="stylesheet" href="/stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="mainbody container">
+<div class="container">
+<h2>botofcookies Moderator Commands</h2>
+</div>
+<div class="container">
+<input class="form-control" type="text" id="inputBox" onkeyup="filterTable()" placeholder="Search for a command...">
+</div>
+<div class="container table-responsive">
+<table class="table table-bordered" id="commandTable">
+<thead>
+<tr>
+<th scope="col">Command</th>
+<th scope="col">Output/Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>!addcom</code></td><td></td></tr>
+<tr><td><code>!addquote</code></td><td>Adds a quote</td></tr>
+<tr><td><code>!aliascom</code></td><td></td></tr>
+<tr><td><code>!auction</code></td><td></td></tr>
+<tr><td><code>!auction close</code></td><td></td></tr>
+<tr><td><code>!auction open</code></td><td></td></tr>
+<tr><td><code>!auction reset</code></td><td></td></tr>
+<tr><td><code>!auction setExtensionTime</code></td><td></td></tr>
+<tr><td><code>!auction setextensiontime</code></td><td></td></tr>
+<tr><td><code>!auction warn</code></td><td></td></tr>
+<tr><td><code>!bet close</code></td><td></td></tr>
+<tr><td><code>!bet open</code></td><td></td></tr>
+<tr><td><code>!bet reset</code></td><td></td></tr>
+<tr><td><code>!botcommands</code></td><td></td></tr>
+<tr><td><code>!botofcookies</code></td><td>Alias for <code>!pbcore</code></td></tr>
+<tr><td><code>!botofcookies forceoffline</code></td><td></td></tr>
+<tr><td><code>!botofcookies forceonline</code></td><td></td></tr>
+<tr><td><code>!botofcookies moderate</code></td><td></td></tr>
+<tr><td><code>!checkfollow</code></td><td></td></tr>
+<tr><td><code>!commercial</code></td><td></td></tr>
+<tr><td><code>!daypoll</code></td><td></td></tr>
+<tr><td><code>!deathctr +</code></td><td></td></tr>
+<tr><td><code>!deathctr -</code></td><td></td></tr>
+<tr><td><code>!deathctr add</code></td><td></td></tr>
+<tr><td><code>!deathctr decr</code></td><td></td></tr>
+<tr><td><code>!deathctr incr</code></td><td></td></tr>
+<tr><td><code>!deathctr reset</code></td><td></td></tr>
+<tr><td><code>!deathctr set</code></td><td></td></tr>
+<tr><td><code>!deathctr sub</code></td><td></td></tr>
+<tr><td><code>!delalias</code></td><td></td></tr>
+<tr><td><code>!delcom</code></td><td></td></tr>
+<tr><td><code>!delquote</code></td><td></td></tr>
+<tr><td><code>!editcom</code></td><td></td></tr>
+<tr><td><code>!editquote</code></td><td></td></tr>
+<tr><td><code>!gamecontrol</code></td><td></td></tr>
+<tr><td><code>!gethighlights</code></td><td></td></tr>
+<tr><td><code>!greeting remove</code></td><td></td></tr>
+<tr><td><code>!greeting set</code></td><td></td></tr>
+<tr><td><code>!greeting setdefault</code></td><td></td></tr>
+<tr><td><code>!hhr set</code></td><td></td></tr>
+<tr><td><code>!highlight</code></td><td></td></tr>
+<tr><td><code>!killctr +</code></td><td></td></tr>
+<tr><td><code>!killctr -</code></td><td></td></tr>
+<tr><td><code>!killctr add</code></td><td></td></tr>
+<tr><td><code>!killctr decr</code></td><td></td></tr>
+<tr><td><code>!killctr died</code></td><td></td></tr>
+<tr><td><code>!killctr incr</code></td><td></td></tr>
+<tr><td><code>!killctr reset</code></td><td></td></tr>
+<tr><td><code>!killctr save</code></td><td></td></tr>
+<tr><td><code>!killctr set</code></td><td></td></tr>
+<tr><td><code>!killctr sub</code></td><td></td></tr>
+<tr><td><code>!lockdown</code></td><td></td></tr>
+<tr><td><code>!modhelp</code></td><td></td></tr>
+<tr><td><code>!mods</code></td><td></td></tr>
+<tr><td><code>!multi clear</code></td><td></td></tr>
+<tr><td><code>!multi set</code></td><td></td></tr>
+<tr><td><code>!multi timer</code></td><td></td></tr>
+<tr><td><code>!pausecommands</code></td><td></td></tr>
+<tr><td><code>!paycom</code></td><td></td></tr>
+<tr><td><code>!pbcore</code></td><td></td></tr>
+<tr><td><code>!pbcore forceoffline</code></td><td></td></tr>
+<tr><td><code>!pbcore forceonline</code></td><td></td></tr>
+<tr><td><code>!pbcore moderate</code></td><td></td></tr>
+<tr><td><code>!penalty</code></td><td></td></tr>
+<tr><td><code>!permit</code></td><td></td></tr>
+<tr><td><code>!poll</code></td><td></td></tr>
+<tr><td><code>!poll close</code></td><td></td></tr>
+<tr><td><code>!poll open</code></td><td></td></tr>
+<tr><td><code>!poll results</code></td><td></td></tr>
+<tr><td><code>!pricecom</code></td><td></td></tr>
+<tr><td><code>!punish</code></td><td></td></tr>
+<tr><td><code>!quotemodetoggle</code></td><td></td></tr>
+<tr><td><code>!raffle</code></td><td></td></tr>
+<tr><td><code>!raffle close</code></td><td></td></tr>
+<tr><td><code>!raffle draw</code></td><td></td></tr>
+<tr><td><code>!raffle lastWinners</code></td><td></td></tr>
+<tr><td><code>!raffle lastwinners</code></td><td></td></tr>
+<tr><td><code>!raffle open</code></td><td></td></tr>
+<tr><td><code>!raffle reset</code></td><td></td></tr>
+<tr><td><code>!raffle togglemessages</code></td><td></td></tr>
+<tr><td><code>!resetcom</code></td><td></td></tr>
+<tr><td><code>!setgame</code></td><td></td></tr>
+<tr><td><code>!settimevar</code></td><td></td></tr>
+<tr><td><code>!shoutout</code></td><td></td></tr>
+<tr><td><code>!shoutoutapitoggle</code></td><td></td></tr>
+<tr><td><code>!showhighlights</code></td><td></td></tr>
+<tr><td><code>!spitcom</code></td><td></td></tr>
+<tr><td><code>!srnext</code></td><td></td></tr>
+<tr><td><code>!synconline</code></td><td></td></tr>
+<tr><td><code>!tokencom</code></td><td></td></tr>
+<tr><td><code>!traffle</code></td><td></td></tr>
+<tr><td><code>!traffle close</code></td><td></td></tr>
+<tr><td><code>!traffle draw</code></td><td></td></tr>
+<tr><td><code>!traffle open</code></td><td></td></tr>
+<tr><td><code>!traffle reset</code></td><td></td></tr>
+<tr><td><code>!users</code></td><td></td></tr>
+<tr><td><code>!warn</code></td><td></td></tr>
+<tr><td><code>!welcome</code></td><td></td></tr>
+<tr><td><code>!welcome disable</code></td><td></td></tr>
+<tr><td><code>!welcome enable</code></td><td></td></tr>
+<tr><td><code>!welcome setfirstmessage</code></td><td></td></tr>
+<tr><td><code>!welcome setmessage</code></td><td></td></tr>
+<tr><td><code>!wrongsong user</code></td><td></td></tr>
+<tr><td><code>!ytp blacklist</code></td><td></td></tr>
+<tr><td><code>!ytp blacklistuser</code></td><td></td></tr>
+<tr><td><code>!ytp delrequest</code></td><td></td></tr>
+<tr><td><code>!ytp pause</code></td><td></td></tr>
+<tr><td><code>!ytp togglerequests</code></td><td></td></tr>
+<tr><td><code>!ytp volume</code></td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
