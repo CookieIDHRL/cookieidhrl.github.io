@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>botofroses commands</title>
+<link rel="stylesheet" href="/bootstrap.css">
+<script src="/jquery.js"></script>
+<script src="/bootstrap.js"></script>
+<script src="/script.js"></script>
+<link type="text/css" rel="stylesheet" href="/stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="mainbody container">
+<div class="container">
+<h2>botofroses commands</h2>
+</div>
+<div class="container">
+<input class="form-control" type="text" id="inputBox" onkeyup="filterTable()" placeholder="Search for a command...">
+</div>
+<div class="container table-responsive">
+<table class="table table-bordered" id="commandTable">
+<thead>
+<tr>
+<th scope="col">Command</th>
+<th scope="col">Output/Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>!5mins</code></td><td><code>!timer start 5:00</code></td></tr>
+<tr><td><code>!8ball</code></td><td>Get a random answer to your question</td></tr>
+<tr><td><code>!account</code></td><td>Used when linking your Twitch and Discord accounts in the bot</td></tr>
+<tr><td><code>!accountage</code></td><td>Calculates the age of your Twitch account</td></tr>
+<tr><td><code>!addsong</code></td><td>Alias for <code>!songrequest</code></td></tr>
+<tr><td><code>!age</code></td><td>How old redroses147 is</td></tr>
+<tr><td><code>!art</code></td><td><code>Check out my art portfolio at https://artstation.com/redroses147art or my instagram at www.instagram.com/redroses147art</code></td></tr>
+<tr><td><code>!artraffle</code></td><td><code>/announce redros20Kittygiggle I'm hosting an art raffle during this 24 hour stream! The winner will receive a full commission-style digital drawing! ToS apply here so please read all the information at redroses147commissions.carrd.co before entering! 🩷 🩷 🩷 To enter, you must do both; be following the channel (don't just follow unfollow but new followers always welcome!) and you get one entry for every subs/gifts/donations equivalent to £5! redros20Kittygiggle</code></td></tr>
+<tr><td><code>!auction</code></td><td></td></tr>
+<tr><td><code>!backseat</code></td><td>Alias for <code>!spoilers</code></td></tr>
+<tr><td><code>!backseating</code></td><td>Alias for <code>!spoilers</code></td></tr>
+<tr><td><code>!battlewin</code></td><td>Gives points to a Marbles battle winner</td></tr>
+<tr><td><code>!bestbot</code></td><td>[SOUND] A reminder of which bot is the best</td></tr>
+<tr><td><code>!bestmod</code></td><td>A reminder of which Mod is the best</td></tr>
+<tr><td><code>!bet</code></td><td></td></tr>
+<tr><td><code>!bid</code></td><td></td></tr>
+<tr><td><code>!birthday</code></td><td>Calculates how many days until redroses147's birthday</td></tr>
+<tr><td><code>!blocked</code></td><td><code>Please don't try and get round any of the blocked terms — they're blocked for a reason. We want chat to be a happy place for everyone, but particularly Kitty as the streamer. The Mods may take action against you if they suspect you of deliberately trying to avoid the restrictions.</code></td></tr>
+<tr><td><code>!bonk</code></td><td><code>redros20Kittybonk (target), you have been BONKED by (sender) redros20Kittybonk</code></td></tr>
+<tr><td><code>!boop</code></td><td><code>redros20Kittyboop (sender) just booped (target)! redros20Kittyboop</code></td></tr>
+<tr><td><code>!botlink</code></td><td><code>to be able to keep chat safe, the bot is sensitive to links. If your message has been deleted, please resend without a link, or request permission from a Mod first :)</code></td></tr>
+<tr><td><code>!botplay</code></td><td><code>!play</code></td></tr>
+<tr><td><code>!brb</code></td><td><code>/announce Kitty has gone on a quick break, she will be back soon!<br>Kitty has gone on a quick break, she will be back soon!</code></td></tr>
+<tr><td><code>!buble</code></td><td>[SOUND] Michael wishing you a very Merry Christmas (at Christmas)</td></tr>
+<tr><td><code>!call</code></td><td><code>redros20Kittylove Samaritans are available 24 hours a day, 365 days a year! Call them for free at 116 123! redros20Kittylove</code></td></tr>
+<tr><td><code>!charityraffle</code></td><td><code>Kitty is hosting a raffle for a full body digital commission-style art piece! All that's needed to enter is a £1 minimum donation to Samaritans! Then later we'll do a Spin the Wheel to decide the winner!!! (Commission T&amp;Cs apply ofc! redros20Kittylove )</code></td></tr>
+<tr><td><code>!charitystream</code></td><td><code>/announce This Saturday 7th October, Kitty will be doing her first Charity Stream! She will be raising money for Samaritans, a mental health charity! The stream will start at 10am, so make sure to show some support redros20Kittylove redros20Kittylove redros20Kittylove redros20Kittylove</code></td></tr>
+<tr><td><code>!christmas</code></td><td>Calculates how many days until Christmas</td></tr>
+<tr><td><code>!commands</code></td><td>Gives the link to this page</td></tr>
+<tr><td><code>!commissions</code></td><td><code>redros20Kittyhype I Fancy commissioning me? I now have a website with all included commission information here! -&gt; https://redroses147commissions.carrd.co/ redros20Kittyhype</code></td></tr>
+<tr><td><code>!cost</code></td><td><code>(sender), (1|cost) costs (price (1|cost))!</code></td></tr>
+<tr><td><code>!count</code></td><td><code>!count &lt;word&gt;</code> How many times a word has been said in chat</td></tr>
+<tr><td><code>!currentsong</code></td><td>Displays the name and YouTube link of the song that's playing now</td></tr>
+<tr><td><code>!currenttime</code></td><td><code>It is currently (currenttime Europe/London, h:mm a) in the UK ((currenttime Europe/London, z))!</code></td></tr>
+<tr><td><code>!dadjoke</code></td><td>Get a random joke that anyone (with a good sense of humour) will enjoy, or search for one with <code>!dadjoke [search terms]</code></td></tr>
+<tr><td><code>!days</code></td><td><code>!days &lt;date&gt;</code> calculates the number of days since or until the date specified</td></tr>
+<tr><td><code>!dbd</code></td><td><code>Here's my ID! t.tv/redroses147#caea. Come play Dead by Daylight with me! &lt;3</code></td></tr>
+<tr><td><code>!dbmanage</code></td><td></td></tr>
+<tr><td><code>!deathctr</code></td><td>How many times redroses147 has died in the game</td></tr>
+<tr><td><code>!discord</code></td><td><code>Kitty's Rose Garden! https://discord.com/invite/HzH8JeKjSx Feel free to come and hang out! redros20Kittylove </code></td></tr>
+<tr><td><code>!dixper</code></td><td><code>/announce redros20Kittyhype Dixper has been enabled! You can sign in or create an account with your Twitch and you can buy crates to support me as well as control my games! We'll also be giving away crates as prizes for minigames etc! Have fun!!! https://dixper.gg/redroses147/about redros20Kittyhype</code></td></tr>
+<tr><td><code>!donate</code></td><td><code>Want to donate through JustGiving towards Samaritans? Click the link to donate here! 🌹https://www.justgiving.com/page/redroses147charity 💚</code></td></tr>
+<tr><td><code>!doubleraid</code></td><td><code>COWBOY KITTY DOUBLE RAID matthe175RAID redros20Kittygoathorn COWBOY KITTY DOUBLE RAID matthe175RAID redros20Kittygoathorn COWBOY KITTY DOUBLE RAID matthe175RAID redros20Kittygoathorn COWBOY KITTY DOUBLE RAID matthe175RAID redros20Kittygoathorn COWBOY KITTY DOUBLE RAID matthe175RAID redros20Kittygoathorn COWBOY KITTY DOUBLE RAID matthe175RAID redros20Kittygoathorn COWBOY KITTY DOUBLE RAID matthe175RAID redros20Kittygoathorn</code></td></tr>
+<tr><td><code>!emotes</code></td><td><code>redros20Harveyking redros20Kittyboop redros20Norat redros20Dwightnervous redros20Kittybonk redros20Jakesmug redros20Kittyhydrate redros20Kittyhype redros20Kittylol redros20Kittyafk redros20Kittyangry redros20Kittyhi redros20Kittyzombie redros20Kittylove redros20Kittyhuh redros20Kittystretch redros20Kittygiggle</code></td></tr>
+<tr><td><code>!english</code></td><td><code>Please keep chat English ♡ ¡Por favor mantén el chat en inglés! ♡ कृपया अंग्रेजी चैट करते रहें! ♡ אנא המשך צ'אט אנגלית! ♡ 영어 채팅을 계속하십시오! ♡ por favor, mantenha o chat em inglês! ♡ mangyaring panatilihin ang chat ingles! ♡ Bitte chatten Sie Englisch! ♡ hãy tiếp tục trò chuyện tiếng anh! ♡ per favore continua a chattare in inglese! ♡ пожалуйста, продолжайте общаться на английском языке! ♡ blijf alsjeblieft engels chatten! ♡ s'il vous plaît continuez à discuter en anglais!</code></td></tr>
+<tr><td><code>!first</code></td><td>Tells you how many times you've been First</td></tr>
+<tr><td><code>!flirt</code></td><td><code>Please no flirting, unnecessary attention or uninvited messages in chat or via whispers/DMs. Polite/friendly compliments are fine, but weird comments or overtly flirting will make me and others uncomfortable. If either myself or a Moderator asks you to tone it down or stop, you must respect the decision.</code></td></tr>
+<tr><td><code>!followage</code></td><td>Calculates how long you have been following redroses147</td></tr>
+<tr><td><code>!gamble</code></td><td>Gamble some of your roses</td></tr>
+<tr><td><code>!gamescan</code></td><td><code>!gamescan &lt;game name&gt;</code> tells you when redroses147 last played a specified game</td></tr>
+<tr><td><code>!gift</code></td><td><code>!gift &lt;username&gt; &lt;amount&gt;</code> gifts your roses to another user</td></tr>
+<tr><td><code>!giveaway</code></td><td><code>/announce redros20Kittygiggle I'm hosting a giveaway of five stickers of the winner's choice from my merch store! The stickers are handcrafted and packaged by me so an address will be needed! ⚠️ Please only enter if you agree to the ToS at https://redroses147-shop.fourthwall.com/ 🩷🩷🩷 All you need to do to enter is be following (no follow unfollows please!) and ask to be entered and me or my mods will put you on the wheel! redros20Kittygiggle</code></td></tr>
+<tr><td><code>!greeting</code></td><td>Base command for managing greetings</td></tr>
+<tr><td><code>!grogu</code></td><td><code>GROGEES @matthewthecowboy_ 's BELOVED</code></td></tr>
+<tr><td><code>!harvey</code></td><td><code>redros20Harveyking Harvey is my late rabbit who is well-known from the beginning of my brand on social media. A very grumpy rabbit who chewed many of my belongings and caused a lot of mischief; he was still a beautiful bunny! He has an emote to remember him by! redros20Harveyking</code></td></tr>
+<tr><td><code>!headpat</code></td><td><code>redros20Kittyheadpat (target) gets head-patted by (sender)! redros20Kittyheadpat</code></td></tr>
+<tr><td><code>!helpkitty</code></td><td><code>/announcepurple Kitty is stuck and would like some help from anyone in chat :)</code></td></tr>
+<tr><td><code>!hhr</code></td><td>Show's Kitty's highest heart rate for the current game, and all-time</td></tr>
+<tr><td><code>!hug</code></td><td><code>(sender) is giving (target) a huge hug! redros20Kittylove &lt;3</code></td></tr>
+<tr><td><code>!intro</code></td><td><code>Hello! I'm Kitty! redros20Kittyhi I'm an artist and variety streamer! I like to stream Dead by Daylight as well as other horror, cosy and adventure games! We do IRL streams too such as art, Just Chatting and Japanese! We promote wholesome, friendly vibes here so everyone feels safe and comfortable! If you like any of the games or need a safe place to chill or talk about what you enjoy, you've come to the right place! Enjoy your stay and it's nice to meet you! &lt;3</code></td></tr>
+<tr><td><code>!joinqueue</code></td><td>Join a queue to play a game with redroses147</td></tr>
+<tr><td><code>!katy</code></td><td><code>doesn't stream so just listen to McFly instead or follow for the lols xoxoxoxoxoxox https://www.twitch.tv/mckaty_</code></td></tr>
+<tr><td><code>!killctr</code></td><td>How many times redroses147 has killed in the game</td></tr>
+<tr><td><code>!lastseen</code></td><td>See when someone last joined chat</td></tr>
+<tr><td><code>!leave</code></td><td><code>(sender) leaves; is it because of something Kitty said?! redros20Kittybonk redros20Kittyhuh</code></td></tr>
+<tr><td><code>!lurk</code></td><td><code>/me (sender) is being a Dweet and chilling in a locker. Take care, don't get caught! redros20Dwightnervous redros20Kittyafk (May I ask you mute the tab and not the stream so you still count as a viewer? Many Thanks!)</code></td></tr>
+<tr><td><code>!marbles</code></td><td><code>The Marbles leaderboard is calculated based on the straight line distance between your ball and the goal, not the distance along the path. For example, if the path goes away from goal and you're at the back, you'll appear first as your marble is technically the closest to the goal.</code></td></tr>
+<tr><td><code>!merch</code></td><td><code>redros20Kittyhype Purchase merch and Handcrafted and packaged by me here! -&gt; https://redroses147-shop.fourthwall.com redros20Kittyhype</code></td></tr>
+<tr><td><code>!misophonia</code></td><td><code>I'm going into this chapter as spoiler-free as I can! I will issue a trigger warning here now for anyone who has misophonia of the sound of cracking bones. I am not fond of this myself so please respect those who suffer with this, thank you! :)</code></td></tr>
+<tr><td><code>!mittens</code></td><td><code>Mittens was adopted on 20th April 2024, she is a black Syrian hamster with white patches on her paws and chest; she loves digging and her sand box!</code></td></tr>
+<tr><td><code>!muted</code></td><td><code>Kitty is currently doing a 5 minute voice ban channel point redemption! She will be interactive with chat once the timer is over redros20Kittylove redros20Kittylove</code></td></tr>
+<tr><td><code>!name</code></td><td><code>✅ Kitty, Roses, Katie-Anaïs ✅ ❌ Katie, Kit, Red ❌</code></td></tr>
+<tr><td><code>!newrules</code></td><td><code>🌹Be respectful to everyone 🌹Listen to the moderators 🌹Do not be hateful or rude 🌹Don’t post or say anything NSFW 🌹Keep extremism content out of chat 🌹No self-promo unless given permission 🌹Swearing is allowed but very limited 🌹Please no flirty messages 🌹Please no asking for roles 🌹No bots or alternate accounts 🌹Real talk is okay, but don’t go overboard 🌹No promotion of non-legit art services 🌹Of course, have fun here!</code></td></tr>
+<tr><td><code>!nextsong</code></td><td>Display the next song in the queue (not including playlist)</td></tr>
+<tr><td><code>!nora</code></td><td><code>redros20Norat Nora is my Syrian hamster who I got in Feburary 2023 after being left in the pet shop for so long. Nora loves gnawing, peanuts and her hamster ball! We sadly lost Nora on the 9th April 2024, but she spreads her angel wings with the other Rosey family! redros20Norat</code></td></tr>
+<tr><td><code>!norat</code></td><td><code>Nora is NOT a rat — Nora is a silly hamster! redros20Kittyboop</code></td></tr>
+<tr><td><code>!oodie</code></td><td><code>(command oodie1)<br>(command oodie2)<br>(command oodie3)</code></td></tr>
+<tr><td><code>!oodiecode</code></td><td><code>redros20Kittycosy Go to https://bit.ly/44CKBM6 and use the code 'REDROSES' for $35/£/€ off Oodies (except Norway 238NOK off) redros20Kittycosy</code></td></tr>
+<tr><td><code>!ow</code></td><td><code>RedRosesTTV#2361</code></td></tr>
+<tr><td><code>!palia</code></td><td><code>Begin your Palian journey here! -&gt; https://accounts.palia.com/sign-up?referral=b4b38e54-af29-469a-a1cc-7ffcd609f802</code></td></tr>
+<tr><td><code>!pingu</code></td><td></td></tr>
+<tr><td><code>!points</code></td><td>Display how many roses you have</td></tr>
+<tr><td><code>!previoussong</code></td><td>Display the last played song</td></tr>
+<tr><td><code>!queue</code></td><td></td></tr>
+<tr><td><code>!quote</code></td><td><code>!quote &lt;id/search terms&gt;</code> gets a quote by id or search, or a random quote if nothing specified</td></tr>
+<tr><td><code>!racewin</code></td><td>Gives points to a Marbles race winner</td></tr>
+<tr><td><code>!raid</code></td><td>Get a random raid message</td></tr>
+<tr><td><code>!raidwelcome</code></td><td><code>Welcome in raiders! redros20Kittyhype redros20Kittyhi Feel free to check out my info panels below! Kitty now does a doodle request for the streamer who raided so be sure to let her know what you'd like her to draw! redros20Kittyhi redros20Kittyhype</code></td></tr>
+<tr><td><code>!rank</code></td><td>Display your current rank</td></tr>
+<tr><td><code>!rose</code></td><td>Alias for <code>!points</code></td></tr>
+<tr><td><code>!roses</code></td><td>Alias for <code>!points</code></td></tr>
+<tr><td><code>!rps</code></td><td>Play rock, paper, scissors against the bot</td></tr>
+<tr><td><code>!rules</code></td><td>Find out the chat's rules</td></tr>
+<tr><td><code>!searchquote</code></td><td><code>!searchquote &lt;search term&gt;</code> search for a quote by a search term</td></tr>
+<tr><td><code>!sillyintro</code></td><td><code>HELLO EVERYONE KITTY IS A SILLY GOOSEY WHO LOVES BALD DWIGHT FROM DBD SHE STREAMS DBD PALIA AND OTHER SLAY CONTENT JOIN THE DISCORD AND BTW MATTHEW SMELLS redros20Kittylove redros20Kittylove redros20Kittylove redros20Kittylove (adminonlyedit)</code></td></tr>
+<tr><td><code>!skillissue</code></td><td><code>redros20Kittypoint GO BECOME SKILLED (target) redros20Kittypoint</code></td></tr>
+<tr><td><code>!slay</code></td><td><code>PDADDY MODE ACTIVATED</code></td></tr>
+<tr><td><code>!smp</code></td><td><code>redros20Kittycosy The Roses SMP runs on Java, to join you'll need to redeem the RosesSMP channel point redemption, join the Discord to get your SMP role! redros20Kittycosy Either me or a mod will send you the SMP link! Upon joining you'll come to the welcome board and some starter materials! Help yourself! Be sure to follow the rules and be kind! Thank you! redros20Kittycosy</code></td></tr>
+<tr><td><code>!socials</code></td><td><code>redros20Kittyhype You can find my website with all of my socials and information here! -&gt; https://redroses147art.carrd.co redros20Kittyhype</code></td></tr>
+<tr><td><code>!songrequest</code></td><td><code>!songrequest &lt;YouTube link/search term&gt;</code> add a song to the queue</td></tr>
+<tr><td><code>!sounds</code></td><td>Get a list of all available sounds</td></tr>
+<tr><td><code>!spamofdances</code></td><td><code>(repeat 21, redros20Kittydance )</code></td></tr>
+<tr><td><code>!spamofdots</code></td><td><code>(repeat 30, … )</code></td></tr>
+<tr><td><code>!spamofdwights</code></td><td><code>(repeat 21, redros20Dwightnervous )<br>(repeat 21, redros20Dwightnervous )<br>(repeat 21, redros20Dwightnervous )</code></td></tr>
+<tr><td><code>!spamofharveys</code></td><td><code>(repeat 21, redros20Harveyking )<br>(repeat 21, redros20Harveyking )<br>(repeat 21, redros20Harveyking )</code></td></tr>
+<tr><td><code>!spamofpoints</code></td><td><code>redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint redros20Kittypoint</code></td></tr>
+<tr><td><code>!spamofsimps</code></td><td><code>redros20Dwightnervous redros20Jakesmug redros20Dwightnervous redros20Jakesmug redros20Dwightnervous redros20Jakesmug redros20Dwightnervous redros20Jakesmug redros20Dwightnervous redros20Jakesmug redros20Dwightnervous redros20Jakesmug redros20Dwightnervous redros20Jakesmug redros20Dwightnervous redros20Jakesmug redros20Dwightnervous redros20Jakesmug redros20Dwightnervous redros20Jakesmug redros20Dwightnervous redros20Jakesmug redros20Dwightnervous redros20Jakesmug</code></td></tr>
+<tr><td><code>!spoiler</code></td><td>Alias for <code>!spoilers</code></td></tr>
+<tr><td><code>!spoilers</code></td><td><code>NO SPOILERS/BACKSEATING! Please don't give any spoilers, or mention things that haven't yet been encountered in the game. Kitty will ask for help if she wants it, otherwise, no backseating.</code></td></tr>
+<tr><td><code>!srnextwhisper</code></td><td></td></tr>
+<tr><td><code>!srwhisper</code></td><td></td></tr>
+<tr><td><code>!steam</code></td><td><code>My steam friend code! ✨ 254294900 ✨</code></td></tr>
+<tr><td><code>!streamertime</code></td><td></td></tr>
+<tr><td><code>!supportme</code></td><td><code>Fancy supporting me and what I do? Feel free to check out my Ko-fi for donations and my Throne for my wishlist, nothing is expected but it's extremely appreciated! redros20Kittylove Ko-fi: https://ko-fi.com/redroses147 Throne: https://throne.com/redroses147</code></td></tr>
+<tr><td><code>!swearing</code></td><td><code>No swearing in messages please! Kitty wants to keep the streams a happy and wholesome place where everyone is comfortable! redros20Kittylove</code></td></tr>
+<tr><td><code>!swf</code></td><td><code>Kitty's streams are open lobbies for swffing unless she's playing killer or doing a co-stream, then the other streamer's viewers have to be included too! But come on in otherwise! redros20Kittygiggle redros20Kittylove</code></td></tr>
+<tr><td><code>!terraria</code></td><td><code>redros20Kittyhype We are trialling a Terraria SMP, you can join by redeeming a Terraria SMP Invite through Channel Points! ⚠️NEW characters only and we're playing via Steam! ⚠️ redros20Kittyhype</code></td></tr>
+<tr><td><code>!thon</code></td><td>Keeps track of the subs, bits and donations in a thon stream</td></tr>
+<tr><td><code>!throne</code></td><td><code>If you're feeling super generous, please take a look at some things I'd like! All gifts are not expected at all, but are greatly appreciated: https://throne.com/redroses147 redros20Kittylove redros20Kittylove redros20Kittylove redros20Kittylove redros20Kittylove redros20Kittylove redros20Kittylove</code></td></tr>
+<tr><td><code>!ticket</code></td><td>Alias for <code>!tickets</code></td></tr>
+<tr><td><code>!tickets</code></td><td><code>!ticket &lt;amount&gt;</code> buy tickets to enter the raffle</td></tr>
+<tr><td><code>!time</code></td><td>Displays how long you have been in chat</td></tr>
+<tr><td><code>!top</code></td><td>Displays the users with the most roses</td></tr>
+<tr><td><code>!topfirst</code></td><td>Displays the users with the most Firsts</td></tr>
+<tr><td><code>!toptime</code></td><td>Displays the users with the most time in chat</td></tr>
+<tr><td><code>!trash</code></td><td><code>redros20Kittyangry Kitty’s bin better than that…! redros20Kittyafk</code></td></tr>
+<tr><td><code>!ttv</code></td><td><code>𝘈 𝘸𝘪𝘭𝘥 𝘛𝘛𝘝 𝘩𝘢𝘴 𝘢𝘱𝘱𝘦𝘢𝘳𝘦𝘥! 𝘉𝘦 𝘴𝘶𝘳𝘦 𝘵𝘰 𝘣𝘦 𝘬𝘪𝘯𝘥 𝘢𝘯𝘥 𝘴𝘦𝘯𝘥 𝘭𝘰𝘷𝘦! 𝘕𝘰 𝘵𝘰𝘹𝘪𝘤𝘪𝘵𝘺 𝘰𝘳 𝘯𝘦𝘨𝘢𝘵𝘪𝘷𝘪𝘵𝘺 𝘸𝘪𝘭𝘭 𝘣𝘦 𝘵𝘰𝘭𝘦𝘳𝘢𝘵𝘦𝘥 𝘩𝘦𝘳𝘦; 𝘢𝘯𝘥 𝘪𝘧 𝘵𝘩𝘦𝘺 𝘤𝘰𝘮𝘦 𝘪𝘯𝘵𝘰 𝘤𝘩𝘢𝘵, 𝘭𝘦𝘵'𝘴 𝘣𝘦 𝘸𝘢𝘳𝘮 𝘢𝘯𝘥 𝘸𝘦𝘭𝘤𝘰𝘮𝘪𝘯𝘨! redros20Kittygiggle redros20Kittycosy</code></td></tr>
+<tr><td><code>!unlucky</code></td><td>[SOUND] UNLUCKYYYYY!</td></tr>
+<tr><td><code>!uptime</code></td><td><code>Kitty has been streaming for (uptime)! redros20Kittyhype</code></td></tr>
+<tr><td><code>!vc</code></td><td><code>❤️ Only moderators can join the Stream VC on their own an use the soundboard ❤️ It goes for everyone who joins the VC you will only be given the Live Authorised role if I know you well enough and you agree to the rules of the channel ❤️</code></td></tr>
+<tr><td><code>!vod</code></td><td>Displays the current uptime and VOD, or a link to the last VOD</td></tr>
+<tr><td><code>!wholesome</code></td><td><code>(sender) is sending wholesome vibes to everyone! 🥰</code></td></tr>
+<tr><td><code>!wrongsong</code></td><td>Removes your last requested song from the queue</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
