@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>botofyeehaws modcoms</title>
+<link rel="stylesheet" href="/bootstrap.css">
+<script src="/jquery.js"></script>
+<script src="/bootstrap.js"></script>
+<script src="/script.js"></script>
+<link type="text/css" rel="stylesheet" href="/stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="mainbody container">
+<div class="container">
+<h2>botofyeehaws Moderator Commands</h2>
+</div>
+<div class="container">
+<input class="form-control" type="text" id="inputBox" onkeyup="filterTable()" placeholder="Search for a command...">
+</div>
+<div class="container table-responsive">
+<table class="table table-bordered" id="mainTable">
+<thead>
+<tr>
+<th scope="col">Command</th>
+<th scope="col">Output/Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>!accountinfo</code></td><td></td></tr>
+<tr><td><code>!addcom</code></td><td><code>!addcom &lt;command&gt; &lt;response&gt;</code> adds a command; surround variables in (brackets)</td></tr>
+<tr><td><code>!aliascom</code></td><td><code>!aliascom &lt;alias&gt; &lt;command&gt;</code> adds an alias to an existing command</td></tr>
+<tr><td><code>!botboost</code></td><td><code>!boost (1)</code></td></tr>
+<tr><td><code>!botcommands</code></td><td></td></tr>
+<tr><td><code>!bottarget</code></td><td><code>!target (1)</code></td></tr>
+<tr><td><code>!checkfollow</code></td><td><code>!checkfollow &lt;username&gt;</code> checks if a user is following the channel</td></tr>
+<tr><td><code>!daypoll</code></td><td>Runs a Twitch poll for how people's days have gone</td></tr>
+<tr><td><code>!deadeasyadd</code></td><td><code>Matthew failed Dead Hard for the (ordinal (count 1 deadeasy)) time... matthe175FACEPALM</code></td></tr>
+<tr><td><code>!delalias</code></td><td><code>!delalias &lt;alias&gt;</code> deletes an alias if it exists</td></tr>
+<tr><td><code>!delcom</code></td><td></td></tr>
+<tr><td><code>!delquote</code></td><td><code>!delquote &lt;id&gt;</code> deletes a quote by id</td></tr>
+<tr><td><code>!editcom</code></td><td><code>!editcom &lt;command&gt; &lt;new response&gt;</code> edits a command; surround variables in (brackets)</td></tr>
+<tr><td><code>!editquote</code></td><td><code>!editquote &lt;id&gt; &lt;user/game/quote&gt; &lt;updated entry&gt;</code> edits either the user, game or quote of a quote by id</td></tr>
+<tr><td><code>!gamecontrol</code></td><td><code>!gamecontrol [gamecode] &lt;ping&gt; &lt;title&gt;</code> manages the stream settings for each game; <code>ping</code> should be <code>on</code>, <code>off</code> or <code>default</code></td></tr>
+<tr><td><code>!lockdown</code></td><td></td></tr>
+<tr><td><code>!modcoms</code></td><td>Alias for <code>!modhelp</code></td></tr>
+<tr><td><code>!modhelp</code></td><td>Show a list of the top mod commands</td></tr>
+<tr><td><code>!mods</code></td><td>Show a list of the mods currently in chat</td></tr>
+<tr><td><code>!pausecommands</code></td><td></td></tr>
+<tr><td><code>!paycom</code></td><td></td></tr>
+<tr><td><code>!penalty</code></td><td></td></tr>
+<tr><td><code>!permit</code></td><td></td></tr>
+<tr><td><code>!pricecom</code></td><td></td></tr>
+<tr><td><code>!punish</code></td><td></td></tr>
+<tr><td><code>!quotemodetoggle</code></td><td></td></tr>
+<tr><td><code>!refresh</code></td><td><code>/announce REFRESH YOUR PAGE</code></td></tr>
+<tr><td><code>!resetcom</code></td><td></td></tr>
+<tr><td><code>!setamongus</code></td><td><code>(writefile ./customCommands/amonguscode.txt, false, (1|unknown))(adminonlyedit)<br>(command amongus)</code></td></tr>
+<tr><td><code>!setgame</code></td><td></td></tr>
+<tr><td><code>!settimevar</code></td><td></td></tr>
+<tr><td><code>!settitle</code></td><td></td></tr>
+<tr><td><code>!shoutout</code></td><td></td></tr>
+<tr><td><code>!skipsong</code></td><td>Skips the currently playing song</td></tr>
+<tr><td><code>!so</code></td><td>Alias for <code>!shoutout</code></td></tr>
+<tr><td><code>!spitcom</code></td><td><code>!spitcom &lt;command&gt;</code> displays the plain response for a custom command, without evaluating variables — useful if you want to copy the format or see how it works</td></tr>
+<tr><td><code>!srnext</code></td><td></td></tr>
+<tr><td><code>!stealsong</code></td><td></td></tr>
+<tr><td><code>!synconline</code></td><td></td></tr>
+<tr><td><code>!tokencom</code></td><td></td></tr>
+<tr><td><code>!ttsskip</code></td><td><code>!tts skipall</code></td></tr>
+<tr><td><code>!users</code></td><td></td></tr>
+<tr><td><code>!warn</code></td><td></td></tr>
+<tr><td><code>!welcome</code></td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
