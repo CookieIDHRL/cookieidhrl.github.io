@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PistolaBot_ commands</title>
+<link rel="stylesheet" href="/bootstrap.css">
+<script src="/jquery.js"></script>
+<script src="/bootstrap.js"></script>
+<script src="/script.js"></script>
+<link type="text/css" rel="stylesheet" href="/stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="mainbody container">
+<div class="container">
+<h2>PistolaBot_ commands</h2>
+</div>
+<div class="container">
+<input class="form-control" type="text" id="inputBox" onkeyup="filterTable()" placeholder="Search for a command...">
+</div>
+<div class="container table-responsive">
+<table class="table table-bordered" id="mainTable">
+<thead>
+<tr>
+<th scope="col">Command</th>
+<th scope="col">Output/Description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>!8ball</code></td><td>Get a random answer to your question</td></tr>
+<tr><td><code>!account</code></td><td>Used when linking your Twitch and Discord accounts in the bot</td></tr>
+<tr><td><code>!accountage</code></td><td>Calculates the age of your Twitch account</td></tr>
+<tr><td><code>!adventure</code></td><td>Go on an adventure with other users to win points</td></tr>
+<tr><td><code>!age</code></td><td>How old McKaty_ is</td></tr>
+<tr><td><code>!auction</code></td><td></td></tr>
+<tr><td><code>!battlewin</code></td><td>Gives points to a Marbles battle winner</td></tr>
+<tr><td><code>!bestbot</code></td><td>[SOUND] A reminder of which bot is the best</td></tr>
+<tr><td><code>!bestmod</code></td><td>A reminder of which Mod is the best</td></tr>
+<tr><td><code>!bet</code></td><td></td></tr>
+<tr><td><code>!bid</code></td><td></td></tr>
+<tr><td><code>!birthday</code></td><td>Calculates how many days until McKaty_'s birthday</td></tr>
+<tr><td><code>!buble</code></td><td>[SOUND] Michael wishing you a very Merry Christmas (at Christmas)</td></tr>
+<tr><td><code>!christmas</code></td><td>Calculates how many days until Christmas</td></tr>
+<tr><td><code>!commands</code></td><td>Gives the link to this page</td></tr>
+<tr><td><code>!dadjoke</code></td><td>Get a random joke that anyone (with a good sense of humour) will enjoy, or search for one with <code>!dadjoke [search terms]</code></td></tr>
+<tr><td><code>!days</code></td><td><code>!days &lt;date&gt;</code> calculates the number of days since or until the date specified</td></tr>
+<tr><td><code>!dbmanage</code></td><td></td></tr>
+<tr><td><code>!deathctr</code></td><td>How many times McKaty_ has died in the game</td></tr>
+<tr><td><code>!discord</code></td><td><code>Join McKaty Land here! -&gt; https://discord.gg/3EFNaG6wnF</code></td></tr>
+<tr><td><code>!emulate</code></td><td></td></tr>
+<tr><td><code>!english</code></td><td><code>Please keep chat English ♡ ¡Por favor mantén el chat en inglés! ♡ कृपया अंग्रेजी चैट करते रहें! ♡ אנא המשך צ'אט אנגלית! ♡ 영어 채팅을 계속하십시오! ♡ por favor, mantenha o chat em inglês! ♡ mangyaring panatilihin ang chat ingles! ♡ Bitte chatten Sie Englisch! ♡ hãy tiếp tục trò chuyện tiếng anh! ♡ per favore continua a chattare in inglese! ♡ пожалуйста, продолжайте общаться на английском языке! ♡ blijf alsjeblieft engels chatten! ♡ s'il vous plaît continuez à discuter en anglais!</code></td></tr>
+<tr><td><code>!first</code></td><td>Tells you how many times you've been First</td></tr>
+<tr><td><code>!followage</code></td><td>Calculates how long you have been following McKaty_</td></tr>
+<tr><td><code>!gamble</code></td><td>Gamble some of your points</td></tr>
+<tr><td><code>!game</code></td><td><code>(pointtouser) (gameinfo)</code></td></tr>
+<tr><td><code>!gamescan</code></td><td><code>!gamescan &lt;game name&gt;</code> tells you when McKaty_ last played a specified game</td></tr>
+<tr><td><code>!gift</code></td><td><code>!gift &lt;username&gt; &lt;amount&gt;</code> gifts your points to another user</td></tr>
+<tr><td><code>!hhr</code></td><td>Show's Kitty's highest heart rate for the current game, and all-time</td></tr>
+<tr><td><code>!isanybodyoutthere</code></td><td><code>I'm here!</code></td></tr>
+<tr><td><code>!kill</code></td><td>Pretend to kill another user</td></tr>
+<tr><td><code>!killctr</code></td><td>How many times McKaty_ has killed in the game</td></tr>
+<tr><td><code>!lastclip</code></td><td>Sends a link to the last clip made</td></tr>
+<tr><td><code>!lastseen</code></td><td>See when someone last joined chat</td></tr>
+<tr><td><code>!pingu</code></td><td></td></tr>
+<tr><td><code>!playtime</code></td><td><code>(pointtouser) (channelname) has been playing (game) for (playtime)</code></td></tr>
+<tr><td><code>!points</code></td><td>Display how many points you have</td></tr>
+<tr><td><code>!quote</code></td><td><code>!quote &lt;id/search terms&gt;</code> gets a quote by id or search, or a random quote if nothing specified</td></tr>
+<tr><td><code>!racewin</code></td><td>Gives points to a Marbles race winner</td></tr>
+<tr><td><code>!rank</code></td><td>Display your current rank</td></tr>
+<tr><td><code>!roll</code></td><td>Roll the dice for some extra points</td></tr>
+<tr><td><code>!roulette</code></td><td>Pull the trigger</td></tr>
+<tr><td><code>!rps</code></td><td>Play rock, paper, scissors against the bot</td></tr>
+<tr><td><code>!rules</code></td><td>Find out the chat's rules</td></tr>
+<tr><td><code>!searchquote</code></td><td><code>!searchquote &lt;search term&gt;</code> search for a quote by a search term</td></tr>
+<tr><td><code>!slot</code></td><td>Play slots to win some points</td></tr>
+<tr><td><code>!socials</code></td><td><code>Follow my socials here! -&gt; https://solo.to/mckaty 📱</code></td></tr>
+<tr><td><code>!sounds</code></td><td>Get a list of all available sounds</td></tr>
+<tr><td><code>!streamertime</code></td><td></td></tr>
+<tr><td><code>!sudo</code></td><td></td></tr>
+<tr><td><code>!thon</code></td><td>Keeps track of the subs, bits and donations in a thon stream</td></tr>
+<tr><td><code>!ticket</code></td><td>Alias for <code>!tickets</code></td></tr>
+<tr><td><code>!tickets</code></td><td><code>!ticket &lt;amount&gt;</code> buy tickets to enter the raffle</td></tr>
+<tr><td><code>!tiktok</code></td><td><code>Follow the TikTok here &lt;33 - https://www.tiktok.com/@mckaty_</code></td></tr>
+<tr><td><code>!time</code></td><td>Displays how long you have been in chat</td></tr>
+<tr><td><code>!title</code></td><td><code>(pointtouser) (titleinfo)</code></td></tr>
+<tr><td><code>!top</code></td><td>Displays the users with the most points</td></tr>
+<tr><td><code>!topclip</code></td><td>Displays the most popular clip from the last day</td></tr>
+<tr><td><code>!topfirst</code></td><td>Displays the users with the most Firsts</td></tr>
+<tr><td><code>!toptime</code></td><td>Displays the users with the most time in chat</td></tr>
+<tr><td><code>!unlucky</code></td><td>[SOUND] UNLUCKYYYYY!</td></tr>
+<tr><td><code>!uptime</code></td><td><code>(pointtouser) (channelname) has been online for (uptime)</code></td></tr>
+<tr><td><code>!vod</code></td><td>Displays the current uptime and VOD, or a link to the last VOD</td></tr>
+<tr><td><code>!vote</code></td><td>Cast your vote in a poll</td></tr>
+<tr><td><code>!w</code></td><td>Alias for <code>!wordle</code></td></tr>
+<tr><td><code>!wordle</code></td><td><code>!wordle [guess word]</code> play Wordle (syncs progress with Discord)</td></tr>
+<tr><td><code>!wordlereset</code></td><td></td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
